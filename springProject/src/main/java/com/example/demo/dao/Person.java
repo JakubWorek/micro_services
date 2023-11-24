@@ -21,9 +21,9 @@ public class Person {
     }
 
     public Person() {
-        this.name = "";
-        this.surname = "";
-        this.job = "";
+        this.name = "Jakub";
+        this.surname = "Worek";
+        this.job = "Dev";
     }
 
     public Long getId() {
