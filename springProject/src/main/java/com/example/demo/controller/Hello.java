@@ -17,7 +17,7 @@ public class Hello {
 
     @GetMapping("/hello")
     public ResponseEntity<Map<String,String>> hello(@RequestParam(value = "name", defaultValue = "World") String name){
-        Map<String,String> json= Map.of("message", "Hello " + name + "!");
+        Map<String,String> json= Map.of("message", "Hello " + name + "! My name is Jakub Worek, nice to meet you.");
         return new ResponseEntity<>(json, HttpStatus.OK);
     }
 
