@@ -18,7 +18,7 @@ public class DemoApplication {
 	public CommandLineRunner demo(PersonsRepository repository) {
 		return (args) -> {
 			// save a few persons
-			repository.save(new Person("John", "Doe", "IT"));
+			repository.save(new Person("Jakub", "Worek", "Developer"));
 			repository.save(new Person("John", "Smith", "tester"));
 
 			// fetch all persons
