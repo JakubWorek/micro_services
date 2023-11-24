@@ -25,7 +25,7 @@ class PersonSchema(ma.SQLAlchemyAutoSchema):
 with app.app_context():
     db.drop_all()
     db.create_all()
-    db.session.add(Person(name="ser", surname="serowy", job='it'))
+    db.session.add(Person(name="Jakub", surname="Worek", job='Developer'))
     db.session.commit()
 
 @app.route('/')
@@ -34,7 +34,7 @@ def hello_world():  # put application's code here
 
 @app.route('/hello/<name>')
 def hello_name(name):
-    return jsonify({'message' : 'Hello ' + name + '!'})
+    return jsonify({'message' : 'Hello ' + name + '! My name is Jakub Worek, nice to meet you.'})
 
 @app.route('/person/<int:id>')
 def get_person_by_id(id):
